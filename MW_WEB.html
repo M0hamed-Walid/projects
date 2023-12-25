@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M🤍W</title>
+    <style>
+        body {
+            background-image: url('https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2020/06/04/2134016-1449521817.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        #palestine-flag {
+            width: 160px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        #palestine-text {
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+ #palestine-tt {
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+
+        #champions-league-summary {
+            margin-top: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        iframe {
+            width: 100%; 
+            height: 200px; 
+            margin-right: 20px; 
+        }
+
+        
+    </style>
+</head>
+
+
+</body>
+</html>
+
+<body>
+<!-- Chatbot integration script -->
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "6b871393-1d61-4e3b-9529-64cdc7b59f77",
+        apiHost: "http://localhost:3000",
+    })
+</script>
+    <h1>💙Created By🤍 Mohamed Walid💙</h1>
+    <img id="palestine-flag" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt="Flag of Palestine">
+    <p id="palestine-text">أول موقع كروي بشات بالذكاء الإصطناعي</p>
+<p id="palestine-tt">ملخص مباريات الأبطال</p>
+
+    <div id="champions-league-summary">
+        <div id="arrow-left" onclick="prevVideo()">&#9664;</div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EDAh7D2uooQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/03XwKgUHzzU?si=cL9Vo5xcCbZ2IoZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W-goCaILwws?si=UE9KPSUkrfRcCH_q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZEMIDH3Endk?si=XHt6LxEAPyj9vrOe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        </div>
+        <div id="arrow-right" onclick="nextVideo()">&#9654;</div>
+    </div>
+
+    <script>
+        let currentVideoIndex = 0;
+        const videos = document.querySelector('.video-container');
+
+        function nextVideo() {
+            currentVideoIndex = (currentVideoIndex + 1) % videos.children.length;
+            updateVideoPosition();
+        }
+
+        function prevVideo() {
+            currentVideoIndex = (currentVideoIndex - 1 + videos
+<!-- Your existing HTML and CSS code -->
